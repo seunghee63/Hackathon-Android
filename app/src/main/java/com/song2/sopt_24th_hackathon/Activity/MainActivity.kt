@@ -1,7 +1,8 @@
-package com.song2.sopt_24th_hackathon
+package com.song2.sopt_24th_hackathon.Activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.song2.sopt_24th_hackathon.R
 
 class MainActivity : AppCompatActivity() {
 
