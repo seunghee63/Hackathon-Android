@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+
+    <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/tv_rv_item_mission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:text="1. 영어 단어 5개 외우기"/>
+
+        <TextView
+                android:paddingTop="8dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/tv_rv_item_mission"
+                android:id="@+id/rv_tv_item_podo_cnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상품 : 3 포도알"/>
+    </LinearLayout>
+
+    <ImageView
+            android:id="@+id/tv_item_isSuccess"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_launcher_background"/>
+</RelativeLayout>
