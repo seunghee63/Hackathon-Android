@@ -1,14 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".Fragment.FeedFragment">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".Fragment.FeedFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent" android:layout_height="50dp">
+
+        <RelativeLayout
+                android:id="@+id/rl_feed_fragment_photo_diary"
+                android:layout_weight="1"
+                android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="사진일기"/>
+        </RelativeLayout>
+
+        <View android:layout_width="1dp" android:layout_height="match_parent"
+              android:background="#20000000"/>
+
+        <RelativeLayout
+                android:id="@+id/rl_feed_fragment_feed"
+                android:layout_weight="1"
+                android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView
+
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="피드"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/ll_content_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+            android:orientation="vertical"
+            android:background="#f9f9f9">
 
-</FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

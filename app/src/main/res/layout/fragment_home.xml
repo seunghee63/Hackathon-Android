@@ -4,24 +4,37 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              tools:context=".Fragment.HomeFragment">
+    <android.support.v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent" android:layout_height="match_parent">
 
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="오늘의 약속"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="오늘의 습관"/>
 
-        <android.support.v7.widget.RecyclerView
-                android:id="@+id/rv_today_todo_list"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-        </android.support.v7.widget.RecyclerView>
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_habit_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
 
-    </LinearLayout>
+            <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="오늘의 약속"/>
 
 
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_today_todo_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
 
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
 </FrameLayout>

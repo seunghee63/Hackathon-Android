@@ -101,8 +101,9 @@
             android:layout_height="wrap_content"
             android:text="약속"
             android:textSize="20dp"
-            android:layout_gravity="center"
-            />
+            android:layout_gravity="center"/>
+
+
 
 
 

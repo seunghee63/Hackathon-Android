@@ -20,8 +20,10 @@ class TodayTodoRecyclerViewAdapter(val ctx : Context, val dataList :ArrayList<To
     override fun getItemCount():Int = dataList.size
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder.mission.text = Int.toString()+". " + dataList[position].mission
+        var pos_cnt = position+1
+        holder.mission.text = pos_cnt.toString()+". " + dataList[position].mission
         holder.podo_num.text = "상품: "+dataList[position].podo_num.toString() +"포도"
+
     }
 
 

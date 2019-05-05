@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.song2.sopt_24th_hackathon.R
 import kotlinx.android.synthetic.main.activity_detailed_todo.*
 import org.jetbrains.anko.startActivity
+import org.jetbrains.anko.toast
 
 class DetailedTodoActivity : AppCompatActivity() {
 
@@ -15,8 +16,7 @@ class DetailedTodoActivity : AppCompatActivity() {
         btn_detailed_todo_submit.setOnClickListener {
             finish()
         }
+
     }
-
-
 
 }
