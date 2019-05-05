@@ -1,6 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="430dp"
+        android:layout_width="match_parent"
+        android:background="#E8EAF6"
+        android:layout_margin="16dp"
+>
 
-</android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_rv_item_habit"
+                android:textColor="#000000"
+                android:textSize="32dp"
+                android:text="김치먹기"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+                android:weightSum="4"
+                android:id="@+id/rl_rv_podo_img_line1"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/tv_rv_item_habit"
+                android:orientation="horizontal"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView
+                    android:id="@+id/iv_rv_podo_cnt_0"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher_round"/>
+            <ImageView
+                    android:id="@+id/iv_rv_podo_cnt_1"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher_round"/>
+            <ImageView
+                    android:id="@+id/iv_rv_podo_cnt_2"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher_round"/>
+            <ImageView
+                    android:id="@+id/iv_rv_podo_cnt_3"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher_round"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:weightSum="3"
+                android:layout_below="@+id/rl_rv_podo_img_line1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+        >
+            <ImageView
+                    android:id="@+id/iv_rv_podo_cnt_4"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher_round"/>
+            <ImageView
+                    android:id="@+id/iv_rv_podo_cnt_5"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher_round"/>
+            <ImageView
+                    android:id="@+id/iv_rv_podo_cnt_6"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher_round"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

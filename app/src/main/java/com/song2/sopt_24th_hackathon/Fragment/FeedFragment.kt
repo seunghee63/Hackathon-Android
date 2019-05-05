@@ -9,24 +9,37 @@ import android.view.ViewGroup
 
 import com.song2.sopt_24th_hackathon.R
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- *
- */
 class FeedFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_feed, container, false)
+        val view = inflater.inflate(R.layout.fragment_feed, container, false)
+        //addFragment()
+        return view
     }
 
+/*    fun addFragment(fragment : Fragment){
+        val fm = childFragmentManager
+        val transaction = fm.beginTransaction()
+
+        *//*val myIntroFragment = MypageIntroFragment()
+        val bundle = Bundle()
+        bundle.putString("name", name)
+        bundle.putString("job", job)
+        bundle.putString("company", company)
+        bundle.putString("image", image)
+        bundle.putString("field", field)
+        bundle.putInt("userID", userID)
+        bundle.putInt("my_or_other_flag", my_or_other_flag)
+        Log.v("asdf", "보내는필드 = " + field)
+        bundle.putString("status", status)
+        bundle.putInt("coworkingEnabled", coworkingEnabled)
+        myIntroFragment.setArguments(bundle)*//*
+
+        transaction.add(R.id.ll_content_layout, myIntroFragment)
+        transaction.commit()
+    }*/
 
 }
