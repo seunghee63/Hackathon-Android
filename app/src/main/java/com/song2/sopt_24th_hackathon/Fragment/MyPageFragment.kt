@@ -37,6 +37,10 @@ class MyPageFragment : Fragment() {
         wantDataItem.add(WantData("제민이 음료 사주기"))
         wantDataItem.add(WantData("제민이 피자 사주기"))
         wantDataItem.add(WantData("제민이 치킨 사주기"))
+        wantDataItem.add(WantData("제민이 라면 사주기"))
+        wantDataItem.add(WantData("제민이 커피 사주기"))
+        wantDataItem.add(WantData("제민이 술 사주기"))
+        wantDataItem.add(WantData("제민이 맥주 사주기"))
         WantAdapter = WantAdapter(wantDataItem)
 
         v.mypage_want_recyclerview.layoutManager = LinearLayoutManager(v.context)
