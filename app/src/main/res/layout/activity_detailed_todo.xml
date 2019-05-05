@@ -6,102 +6,156 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Activity.DetailedTodoActivity"
-        android:orientation="vertical"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="50dp">
+        android:orientation="vertical">
 
-    <TextView
-            android:id="@+id/txt_detailed_todo_me"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="나는"
-            android:textSize="30dp"/>
-    <!--<LinearLayout-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="horizontal"-->
-            <!--android:layout_gravity="center"-->
-            <!--android:layout_margin="20dp">-->
-        <!--<ImageView-->
-                <!--android:id="@+id/img_detailed_todo_today"-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="100dp"-->
-                <!--android:background="#E91E63"-->
-                <!--android:layout_marginRight="10dp"-->
-                <!--android:layout_weight="1"/>-->
-        <!--<ImageView-->
-                <!--android:id="@+id/img_detailed_todo_week"-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="100dp"-->
-                <!--android:background="#3F51B5"-->
-                <!--android:layout_marginHorizontal="10dp"-->
-                <!--android:layout_weight="1"/>-->
-        <!--<ImageView-->
-                <!--android:id="@+id/img_detailed_todo_edit"-->
-                <!--android:layout_width="150dp"-->
-                <!--android:layout_height="100dp"-->
-                <!--android:background="#FFEB3B"-->
-                <!--android:layout_marginLeft="10dp"-->
-                <!--android:layout_weight="1"/>-->
-    <!--</LinearLayout>-->
-    <EditText
-            android:id="@+id/edt_detailed_todo_date"
+
+    <ImageView
+            android:id="@+id/img_detailed_todo_title"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:hint="기간을 입력하세요"
-            android:background="@drawable/black_border"
-            android:gravity="center"
-            android:layout_marginVertical="20dp"/>
-
-
-    <EditText
-            android:id="@+id/edt_detailed_todo_mission"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@drawable/black_border"
-            android:hint="직접 입력하세요."
-            android:gravity="center"/>
-
-    <TextView
-            android:id="@+id/txt_detailed_todo_mission"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="을 하기로 엄마/아빠와 약속합니다."
-            android:textSize="30dp"
-            android:layout_marginVertical="20dp"/>
-
-    <TextView
-            android:id="@+id/txt_detailed_todo_reward"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="보상: 3 포도알(or 에버랜드)"
-            android:textSize="25dp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"/>
+            android:src="@drawable/toptwo"/>
 
-    <TextView
-            android:id="@+id/txt_detailed_todo_sign_me"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="엉아 OOO (싸인)"
-            android:textSize="15dp"
-            android:layout_gravity="right"
-            android:layout_marginTop="40dp"/>
-    <TextView
-            android:id="@+id/txt_detailed_todo_sign_mom"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="엉아 OOO (싸인)"
-            android:textSize="15dp"
-            android:layout_gravity="right"/>
+    <LinearLayout
+            android:layout_width="302dp"
+            android:layout_height="445dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="@drawable/black_border"
+            android:layout_marginTop="38dp">
 
-    <Button
-            android:id="@+id/btn_detailed_todo_submit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="약속"
-            android:textSize="20dp"
-            android:layout_gravity="center"/>
+        <TextView
+                android:id="@+id/txt_detailed_todo_me"
+                android:layout_width="33dp"
+                android:layout_height="20dp"
+                android:text="나는"
+                android:textSize="18sp"
+                android:textColor="#5d5d5d"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="3sp"
+                android:layout_marginTop="56dp"
+                android:layout_marginLeft="41dp"/>
+
+        <EditText
+                android:id="@+id/edt_detailed_todo_date"
+                android:layout_width="215dp"
+                android:layout_height="37dp"
+                android:hint="기간 직접 정하기"
+                android:textColorHint="#d273f6"
+                android:background="@drawable/purple_border"
+                android:gravity="center"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="41dp"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="28dp">
+
+            <EditText
+                    android:id="@+id/edt_detailed_todo_mission"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/purple_border"
+                    android:textColorHint="#d273f6"
+                    android:gravity="center"
+                    android:layout_marginLeft="41dp"/>
+
+            <TextView
+                    android:id="@+id/txt_detailed_todo_mission"
+                    android:layout_width="42dp"
+                    android:layout_height="20dp"
+                    android:text="을/를"
+                    android:textSize="18sp"
+                    android:textColor="#5d5d5d"
+                    android:letterSpacing="0.01"
+                    android:lineSpacingExtra="3sp"
+                    android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/txt_detailed_todo_reward"
+                android:layout_width="207dp"
+                android:layout_height="20dp"
+                android:text="하기로 부모님과 약속합니다"
+                android:textSize="18sp"
+                android:textColor="#5d5d5d"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="12sp"
+                android:layout_marginTop="20.5dp"
+                android:layout_marginLeft="41dp"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="149dp">
+
+            <ImageView
+                    android:id="@+id/img_detailed_todo_podo"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/podo"
+                    android:layout_marginRight="5dp"/>
+
+            <TextView
+                    android:id="@+id/txt_detailed_todo_podo1"
+                    android:layout_width="58dp"
+                    android:layout_height="13dp"
+                    android:text="보상 포도알"
+                    android:textSize="12sp"
+                    android:textColor="#5d5d5d"
+                    android:letterSpacing="0.01"
+                    android:lineSpacingExtra="18sp"
+                    android:layout_marginRight="4dp"/>
+
+            <TextView
+                    android:id="@+id/txt_detailed_todo_podo2"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/purple_border"/>
+
+            <TextView
+                    android:id="@+id/txt_detailed_todo_podo3"
+                    android:layout_width="11dp"
+                    android:layout_height="13dp"
+                    android:textSize="12sp"
+                    android:textColor="#5d5d5d"
+                    android:letterSpacing="0.01"
+                    android:lineSpacingExtra="18sp"
+                    android:text="개"
+                    android:layout_marginLeft="4dp"/>
+        </LinearLayout>
+
+
+        <Button
+                android:id="@+id/btn_detailed_todo_submit"
+                android:layout_width="79dp"
+                android:layout_height="37dp"
+                android:text="약속!"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="3sp"
+                android:layout_gravity="center"
+                android:background="@drawable/yello_border"
+                android:layout_marginTop="40.7dp"/>
+
+
+        <ImageView
+                android:id="@+id/img_detailed_todo_podo_half"
+                android:layout_width="147.8dp"
+                android:layout_height="75.9dp"
+                android:layout_marginLeft="151dp"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/podo_half"
+                />
+
+
+    </LinearLayout>
 
 
 

@@ -10,7 +10,8 @@
             android:layout_height="146dp"
             android:background="@drawable/black_border"
             android:paddingHorizontal="22dp"
-            android:paddingVertical="16dp">
+            android:paddingVertical="16dp"
+            android:layout_margin="5dp">
 
         <TextView
                 android:id="@+id/txt_rv_item_todo_overview_date"
