@@ -13,15 +13,12 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-        <TextView
-                android:id="@+id/txt_todo_title"
+        <ImageView
+                android:id="@+id/img_todo_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="약속 정하기"
-                android:textSize="18sp"
-                android:textColor="#000000"
-                android:lineSpacingExtra="3sp"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:src="@drawable/toptwo"/>
 
 
         <android.support.v7.widget.RecyclerView
@@ -64,6 +61,7 @@
             android:layout_gravity="bottom|end"
             android:layout_marginRight="30dp"
             android:layout_marginBottom="30dp"
-            android:backgroundTint="#fcc036"/>
+            android:backgroundTint="#fcc036"
+            android:src="@drawable/plus"/>
 
 </FrameLayout>
