@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="다이얼로그 실행"
+        android:text="조르기 성공!!"
         android:textSize="20sp"
         android:textColor="#000000"
         android:textStyle="bold"
