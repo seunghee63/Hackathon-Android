@@ -5,7 +5,23 @@
               android:layout_height="match_parent"
               android:orientation="vertical"
               tools:context=".Fragment.FeedFragment">
+    <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent" android:layout_height="80dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="우리아이가 달라졌어요!"
+                  android:textSize="21sp"
+                  android:textColor="#000000"
+        />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="포도랑과 함께하 생활습관 기르기"/>
+    </LinearLayout>
 
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+    android:background="#20000000">
+
+    </View>
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent" android:layout_height="50dp">
@@ -34,6 +50,9 @@
                     android:text="피드"/>
         </RelativeLayout>
     </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+          android:background="#20000000"/>
 
 
     <LinearLayout
