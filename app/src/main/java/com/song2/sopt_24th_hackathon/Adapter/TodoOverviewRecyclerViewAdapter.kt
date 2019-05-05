@@ -1,12 +1,14 @@
 package com.song2.sopt_24th_hackathon.Adapter
 
 import android.content.Context
+import android.support.design.widget.FloatingActionButton
 import android.support.v7.widget.RecyclerView
 import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import android.widget.RelativeLayout
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.song2.sopt_24th_hackathon.Activity.DetailedTodoActivity
@@ -32,11 +34,12 @@ class TodoOverviewRecyclerViewAdapter(val ctx: Context, val dataList: ArrayList<
         holder.ll_rv_item_todo_overview_container.setOnClickListener {
             ctx.startActivity<DetailedTodoActivity>()
         }
+
     }
 
 
     inner class Holder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var ll_rv_item_todo_overview_container = itemView.findViewById(R.id.ll_rv_item_todo_overview_container) as LinearLayout
+        var ll_rv_item_todo_overview_container = itemView.findViewById(R.id.ll_rv_item_todo_overview_container) as RelativeLayout
         var date = itemView.findViewById(R.id.txt_rv_item_todo_overview_date) as TextView
         var mission = itemView.findViewById(R.id.txt_rv_item_todo_overview_mission) as TextView
         var podo_num = itemView.findViewById(R.id.txt_rv_item_todo_overview_podo_num) as TextView
