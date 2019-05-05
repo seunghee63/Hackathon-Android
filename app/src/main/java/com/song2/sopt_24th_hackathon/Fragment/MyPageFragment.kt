@@ -1,5 +1,6 @@
 package com.song2.sopt_24th_hackathon.Fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
@@ -7,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import com.song2.sopt_24th_hackathon.Activity.MarketActivity
 import com.song2.sopt_24th_hackathon.Adapter.WantAdapter
 import com.song2.sopt_24th_hackathon.Data.WantData
 import com.song2.sopt_24th_hackathon.R
@@ -27,10 +29,14 @@ class MyPageFragment : Fragment() {
 
         getWantData(v)
 
+        v.mypage_podomarket_tv.setOnClickListener{
+            var intent = Intent(activity, MarketActivity::class.java)
+            startActivity(intent)
+        }
+
         return v
     }
 
-    // 자신의 찜목록 리스트 가져오기
     private fun getWantData(v : View) {
         wantDataItem = ArrayList()
         wantDataItem.add(WantData("제민이 맛있는거 사주기"))
