@@ -23,13 +23,6 @@ class HomeFragment : Fragment() {
     lateinit var todayTodoRecyclerViewAdapter : TodayTodoRecyclerViewAdapter
     lateinit var habitRecyclerViewAdapter: HabitRecyclerViewAdapter
 
-    lateinit var todoOverviewRecyclerViewAdapter: TodoOverviewRecyclerViewAdapter
-    lateinit var networkService : NetworkService
-    var toDoDataList = ArrayList<GetTodoData>()
-    var toDoData = ArrayList<HabitListData>()
-    //var dataList0 : ArrayList<HabitListData> = ArrayList()
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -66,36 +59,4 @@ class HomeFragment : Fragment() {
         rv_habit_list.adapter = habitRecyclerViewAdapter
         rv_habit_list.layoutManager = LinearLayoutManager(context!!, LinearLayout.HORIZONTAL,false)
     }
-
-/*    private fun getTodoList(v : View) {
-        try {
-            networkService = ApiClient.getRetrofit().create(NetworkService::class.java)
-            var getToDoResponse = networkService.getTodo() // 네트워크 서비스의 getContent 함수를 받아옴
-            getToDoResponse.enqueue(object : Callback<GetTodoListResponse> {
-                override fun onResponse(call: Call<GetTodoListResponse>?, response: Response<GetTodoListResponse>?) {
-                    if(response!!.isSuccessful)
-                    {
-                        // toDo 리스트 크기 != 0
-                        if(response.body()!!.data.size != 0)
-                        {
-                            toDoDataList = response.body()!!.data
-
-                            for(i in 0..toDoDataList.size-1) {
-                                //toDoData.add(TodoData(toDoDataList[i].title, toDoDataList[i].reward.toInt()))
-                            }
-                            habitRecyclerViewAdapter = HabitRecyclerViewAdapter(context!!, toDoData)
-                            v.rv_habit_list.adapter = habitRecyclerViewAdapter
-                            v.rv_habit_list.layoutManager = GridLayoutManager(context!!, 2)
-                        }
-                    }
-                }
-                override fun onFailure(call: Call<GetTodoListResponse>?, t: Throwable?) {
-                }
-            })
-        } catch (e: Exception) {
-        }
-
-    }*/
-
-
 }
