@@ -20,7 +20,11 @@ interface NetworkService {
     // 새로운 습관 생성
     @FormUrlEncoded
     @POST("/makeToDo")
-    fun postHabbit(@Field("type") type: String, @Field("title") title: String, @Field("reward") reward: String, @Field("count") count: String, @Field("setDay") setDay: String): Call<PostResponse>
+    fun postHabbit(
+        @Field("type") type: String, @Field("title") title: String, @Field("reward") reward: String, @Field("count") count: String, @Field(
+            "setDay"
+        ) setDay: String
+    ): Call<PostResponse>
 
 
 }

@@ -1,6 +1,7 @@
 package com.song2.sopt_24th_hackathon.NetworkService.Get
 
-data class GetTodoData (
+data class
+GetTodoData (
       var id : String,
       var type : String,
       var title : String,

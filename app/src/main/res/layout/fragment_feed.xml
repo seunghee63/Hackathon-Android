@@ -5,7 +5,47 @@
               android:layout_height="match_parent"
               android:orientation="vertical"
               tools:context=".Fragment.FeedFragment">
+    <ImageView
+            android:id="@+id/img_home_title"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:src="@drawable/top"/>
+    <RelativeLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent" android:layout_height="120dp">
+        <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/ourchild"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="우리아이가 달라졌어요!"
+                  android:textSize="18sp"
+                  android:textColor="#5d5d5d"
+                  android:letterSpacing="0.01"
+                  android:lineSpacingExtra="12sp"/>
+        <TextView
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@+id/ourchild"
+                android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#5d5d5d"
+                    android:letterSpacing="0.01"
+                    android:lineSpacingExtra="18sp"
+                    android:text="포도랑과 함께하 생활습관 기르기"/>
 
+        <ImageView android:layout_centerVertical="true"
+                   android:layout_marginStart="16dp"
+                android:layout_toRightOf="@id/ourchild"
+                android:layout_width="60dp" android:layout_height="67dp"
+                android:src="@drawable/podo_half" android:layout_marginBottom="13dp"/>
+    </RelativeLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+    android:background="#d273f6">
+
+    </View>
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent" android:layout_height="50dp">
@@ -21,7 +61,7 @@
         </RelativeLayout>
 
         <View android:layout_width="1dp" android:layout_height="match_parent"
-              android:background="#20000000"/>
+              android:background="#d273f6"/>
 
         <RelativeLayout
                 android:id="@+id/rl_feed_fragment_feed"
@@ -34,6 +74,9 @@
                     android:text="피드"/>
         </RelativeLayout>
     </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+          android:background="#d273f6"/>
 
 
     <LinearLayout

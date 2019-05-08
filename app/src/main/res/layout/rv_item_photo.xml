@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+            android:id="@+id/tv_rv_item_date"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="# 5월 6일"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView
+                android:id="@+id/iv_rv_photo_cnt0"
+                android:layout_weight="1"
+                android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView
+                android:id="@+id/iv_rv_photo_cnt1"
+                android:layout_weight="1"
+                android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView
+                android:id="@+id/iv_rv_photo_cnt2"
+                android:layout_weight="1"
+                android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView
+                android:id="@+id/iv_rv_photo_cnt3"
+                android:layout_weight="1"
+                android:layout_width="match_parent" android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -10,8 +10,11 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.song2.sopt_24th_hackathon.Adapter.HabitRecyclerViewAdapter
 import com.song2.sopt_24th_hackathon.Adapter.TodayTodoRecyclerViewAdapter
+import com.song2.sopt_24th_hackathon.Adapter.TodoOverviewRecyclerViewAdapter
 import com.song2.sopt_24th_hackathon.Data.HabitListData
 import com.song2.sopt_24th_hackathon.Data.TodayTodoListData
+import com.song2.sopt_24th_hackathon.NetworkService.Get.GetTodoData
+import com.song2.sopt_24th_hackathon.NetworkService.NetworkService
 
 import com.song2.sopt_24th_hackathon.R
 import kotlinx.android.synthetic.main.fragment_home.*
@@ -45,7 +48,6 @@ class HomeFragment : Fragment() {
         rv_today_todo_list.adapter = todayTodoRecyclerViewAdapter
         rv_today_todo_list.layoutManager = LinearLayoutManager(context!!)
 
-
         var dataList0 : ArrayList<HabitListData> = ArrayList()
         dataList0.add(HabitListData("김치 먹기", 3))
         dataList0.add(HabitListData("아침 인사하기", 3))
@@ -57,6 +59,4 @@ class HomeFragment : Fragment() {
         rv_habit_list.adapter = habitRecyclerViewAdapter
         rv_habit_list.layoutManager = LinearLayoutManager(context!!, LinearLayout.HORIZONTAL,false)
     }
-
-
 }
