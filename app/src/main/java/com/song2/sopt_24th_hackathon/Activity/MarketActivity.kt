@@ -25,11 +25,11 @@ class MarketActivity : AppCompatActivity()  {
 
     private fun getMarketData() {
         marketDataList = ArrayList()
-        marketDataList.add(MarketData("제민이 짜장면 이용권",200))
-        marketDataList.add(MarketData("제민이 치킨 무한 이용권",100))
-        marketDataList.add(MarketData("제민이 용돈 주기 이용권",300))
-        marketDataList.add(MarketData("제민이 맘대로 이용권",500))
-        marketDataList.add(MarketData("제민이 꽝 이용권",400))
+        marketDataList.add(MarketData("짜장면 이용권",200))
+        marketDataList.add(MarketData("치킨 이용권",100))
+        marketDataList.add(MarketData("용돈 받기 이용권",300))
+        marketDataList.add(MarketData("에버랜드 이용권",500))
+        marketDataList.add(MarketData("고기 이용권",400))
         marketAdapter = MarketAdapter(marketDataList, this)
 
         market_content_recyclerview.layoutManager = LinearLayoutManager(applicationContext)

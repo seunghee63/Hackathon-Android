@@ -3,6 +3,7 @@ package com.song2.sopt_24th_hackathon.Fragment
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.GridLayoutManager
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -66,7 +67,8 @@ class TodoFragment : Fragment() {
                             toDoDataList = response.body()!!.data
 
                             for(i in 0..toDoDataList.size-1) {
-                                toDoData.add(TodoData("2019-05-06", toDoDataList[i].title, toDoDataList[i].reward!!))
+                                if(toDoDataList[i].title != null)
+                                 toDoData.add(TodoData("2019/05/06", toDoDataList[i].title, toDoDataList[i].reward!!))
                             }
                             todoOverviewRecyclerViewAdapter = TodoOverviewRecyclerViewAdapter(context!!, toDoData)
 

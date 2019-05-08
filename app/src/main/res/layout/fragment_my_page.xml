@@ -6,43 +6,41 @@
     android:orientation="vertical"
              tools:context=".Fragment.MyPageFragment">
 
-    <TextView
-        android:id="@+id/mypage_title_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="마이페이지"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        />
+    <ImageView
+            android:id="@+id/img_my_page_title"
+            android:layout_width="360dp"
+            android:layout_height="87dp"
+            android:src="@drawable/top_mypage"
+            android:layout_gravity="center"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        >
+        android:layout_marginTop="10dp">
 
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/mypage_profile_img"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:src="@drawable/ic_launcher_background"
+            android:src="@drawable/baby"
             android:layout_marginLeft="30dp"
             />
+
 
         <TextView
             android:id="@+id/mypage_name_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="김엉아"
+            android:textColor="#5d5d5d"
             android:textSize="20sp"
             android:textStyle="bold"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="3sp"
             android:layout_toRightOf="@+id/mypage_profile_img"
             android:layout_marginTop="5dp"
-            android:layout_marginLeft="50dp"
-            />
+            android:layout_marginLeft="50dp"/>
         <TextView
             android:id="@+id/mypage_age_tv"
             android:layout_width="wrap_content"
@@ -69,8 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#c3c3c3"
-        android:layout_marginTop="10dp"
-        />
+        android:layout_marginTop="10dp"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -129,7 +126,8 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginLeft="20dp"
-            android:src="@drawable/ic_launcher_background"
+            android:src="@drawable/grape"
+            android:scaleType="fitXY"
             />
 
         <TextView

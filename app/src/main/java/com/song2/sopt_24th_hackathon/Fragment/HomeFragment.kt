@@ -44,12 +44,12 @@ class HomeFragment : Fragment() {
         var dataList : ArrayList<TodayTodoListData> = ArrayList()
         dataList.add(TodayTodoListData("일기 쓰기", 3,false))
         dataList.add(TodayTodoListData("영어단어 5개 외우기", 3,false))
-        dataList.add(TodayTodoListData("일기 쓰기", 3,false))
-        dataList.add(TodayTodoListData("영어단어 5개 외우기", 3,false))
-        dataList.add(TodayTodoListData("일기 쓰기", 3,false))
-        dataList.add(TodayTodoListData("영어단어 5개 외우기", 3,false))
-        dataList.add(TodayTodoListData("일기 쓰기", 3,false))
-        dataList.add(TodayTodoListData("영어단어 5개 외우기", 3,false))
+        dataList.add(TodayTodoListData("구몬 3장 풀기", 3,false))
+        dataList.add(TodayTodoListData("컴퓨터 1시간 하기", 3,false))
+        dataList.add(TodayTodoListData("10시 전에 자기", 3,false))
+        dataList.add(TodayTodoListData("양치 하루 세번하기", 3,false))
+        dataList.add(TodayTodoListData("자기 전에 씻기", 3,false))
+        dataList.add(TodayTodoListData("설거지하기", 3,false))
 
         todayTodoRecyclerViewAdapter = TodayTodoRecyclerViewAdapter(context!!,dataList)
         rv_today_todo_list.adapter = todayTodoRecyclerViewAdapter
@@ -57,12 +57,10 @@ class HomeFragment : Fragment() {
 
         var dataList0 : ArrayList<HabitListData> = ArrayList()
         dataList0.add(HabitListData("김치 먹기", 3))
-        dataList0.add(HabitListData("영어단어 5개 외우기", 3))
+        dataList0.add(HabitListData("아침 인사하기", 3))
         dataList0.add(HabitListData("일기 쓰기", 3))
-        dataList0.add(HabitListData("영어단어 5개 외우기", 3))
-        dataList0.add(HabitListData("일기 쓰기", 3))
-        dataList0.add(HabitListData("영어단어 5개 외우기", 3))
-        dataList0.add(HabitListData("일기 쓰기", 3))
+        dataList0.add(HabitListData("편식 안하기", 3))
+        dataList0.add(HabitListData("화내지 않기", 3))
 
         habitRecyclerViewAdapter = HabitRecyclerViewAdapter(context!!,dataList0)
         rv_habit_list.adapter = habitRecyclerViewAdapter
